@@ -1,19 +1,15 @@
  
-$primary-bg: #f5f2ea;
-$secondary-bg: #ebe8de;
-$dark-bg: #333333;
-$accent-primary: #bf925b;
-$accent-secondary: #563b4c;
+@use 'components/color';
 
 
-$primary: $accent-primary;
+$primary: color.$accent-primary;
 // $secondary:$accent-secondary;
-$dark :$dark-bg;
-$success:$primary-bg;
-$danger:$secondary-bg;
+$dark :color.$dark-bg;
+$success:color.$primary-bg;
+$danger:color.$secondary-bg;
 
 .price-btn:hover {
-    background-color: $accent-secondary !important;
+    background-color: color.$accent-secondary !important;
   }
 
 

@@ -1,11 +1,53 @@
+@use '../components/color';
+@use '../components/typography';
+
 .hero {
     height: 100vh;
     width: 100%;
     background-color: #00000088;
     background-image: url(../../images/bg-2.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position:top center;
     background-size: cover;
     background-blend-mode:darken;
+    background-attachment: fixed;
+
+    
+
+    & .navbar-nav {
+        gap:2.25rem;
+        justify-content: space-around;
+    }
+
+
+
+    & .nav-link{
+        color: #fff;
+        &:hover {
+            color: color.$accent-primary;
+        }
+
+    }
+
+    & .active .nav-link {  
+        color: color.$accent-primary;
+    }
+
+
+    & p {
+        font-weight: 700;
+        line-height: 1.8;
+    }
+
+    & h1 {
+        font-weight: 700;
+        font-size: clamp(1.875rem, 0.3125rem + 6.6667vw, 6.3125rem);
+        line-height: 1;
+        font-family: typography.$font-secondary;
+    }
+
+    & .btn:hover {
+        color: #fff;
+    }
 
 }

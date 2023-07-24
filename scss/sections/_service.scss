@@ -1,0 +1,21 @@
+@use '../components/typography';
+.service {
+    &__sub-heading{
+        font-size: 12px;
+    }
+
+    &__heading{
+        font-family: typography.$font-secondary;
+        font-weight: 700;
+        font-size: clamp(1.75rem, 1.033rem + 3.0189vw, 3.75rem);
+    }
+
+    &__name {
+        font-weight: 700;
+    }
+
+    &__img {
+        height: 86px;
+        width: 62px;
+    }
+}

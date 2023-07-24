@@ -1,0 +1,39 @@
+@use '../components/color';
+
+.intro {
+
+    &__img-card--1{
+        background-image: url(../../images/formen.jpg);
+    }
+
+    &__img-card--2 {
+        background-image: url(../../images/forwomen.jpg);
+    }
+
+    &__img-card {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #00000088;
+        background-blend-mode:darken;
+        min-height: 354px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__img-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 3px solid color.$accent-primary;
+        width: 90%;
+        height: 90%;
+        margin: auto;
+    }
+
+    & .btn:hover {
+        color: #fff;
+    }
+
+}
