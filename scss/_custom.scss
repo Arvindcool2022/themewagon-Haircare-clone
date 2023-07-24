@@ -1,0 +1,22 @@
+ 
+$primary-bg: #f5f2ea;
+$secondary-bg: #ebe8de;
+$dark-bg: #333333;
+$accent-primary: #bf925b;
+$accent-secondary: #563b4c;
+
+
+$primary: $accent-primary;
+// $secondary:$accent-secondary;
+$dark :$dark-bg;
+$success:$primary-bg;
+$danger:$secondary-bg;
+
+.price-btn:hover {
+    background-color: $accent-secondary !important;
+  }
+
+
+
+// IMPORT BOOTSTRAP
+@import "../node_modules/bootstrap/scss/bootstrap.scss"

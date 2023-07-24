@@ -1,0 +1,54 @@
+@use '../components/typography';
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    img {
+        width: 52px;
+        height: 52px;
+    }
+}
+
+.navbar-toggler {
+    font-size: 1.25rem;
+    letter-spacing: 0.15rem;
+    
+    &:focus {
+        box-shadow: none;
+    }
+    
+    & i{
+    font-style: normal;
+
+    }
+}
+
+.nav-link {
+    text-transform: uppercase;
+    padding:0.9rem 0;
+    font-weight: 500;
+}
+
+.visible-after-lg {
+    display: none;
+    overflow: hidden;
+}
+
+
+@media screen and (min-width: 992px) {
+    
+    .visible-till-lg {
+        display: none;
+    }
+    
+    .visible-after-lg {
+        display: block;
+        border: 2px solid red;
+    }
+
+    .navbar-nav {
+        margin-left: auto;
+    }
+
+}

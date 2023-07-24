@@ -1,0 +1,28 @@
+// IMPORT BOOTSTRAP WITH CUSTOMS
+@use "custom";
+
+// IMPORT COMPONENTS
+
+@use 'components/typography';
+@use 'components/animation';
+@use 'components/button';
+@use 'components/-mixin.scss';
+
+
+
+// IMPORT SECTIONS
+
+@use 'sections/nav-bar';
+@use 'sections/hero';
+@use 'sections/intro';
+@use 'sections/service';
+@use 'sections/appointment';
+@use 'sections/artist';
+@use 'sections/gallery';
+@use 'sections/price';
+@use 'sections/footer';
+
+body {
+    background-color: rgb(59, 59, 59);
+    font-family:typography.$font-primary;
+}
