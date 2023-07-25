@@ -1,6 +1,7 @@
 @use '../components/color';
 
 .intro {
+    overflow-x: hidden;
 
     &__img-card--1{
         background-image: url(../../images/formen.jpg);

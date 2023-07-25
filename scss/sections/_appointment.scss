@@ -1,0 +1,41 @@
+@use '../components/color';
+@use '../components/typography';
+@use '../components/mixin';
+
+.appointment {
+    background-color: color.$secondary-bg;
+    padding: 5rem 1rem;
+    text-align: center;
+    @include mixin.headings;
+    
+    form {
+        position: relative;
+        max-width: 1100px;
+
+        .form-control,
+        .form-select,
+        .form-floating > .form-control:focus ~ label::after,
+        .form-floating > .form-control:not(:placeholder-shown) ~ label::after, 
+        .form-floating > .form-control-plaintext ~ label::after, 
+        .form-floating > .form-select ~ label::after {
+            background-color: color.$secondary-bg ;
+        }
+    }
+
+    h3.vr {
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+        color: color.$accent-secondary;
+        opacity: 1;
+        font-weight: 600;
+        font-family: typography.$font-secondary;
+        font-size: 1.5rem;
+        text-decoration: none;
+        text-orientation: sideways;
+        background-color: transparent;
+        margin: 0;
+        position: absolute;
+        left: -50px;
+    } 
+
+}

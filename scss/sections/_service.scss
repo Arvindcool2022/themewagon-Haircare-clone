@@ -1,14 +1,9 @@
-@use '../components/typography';
-.service {
-    &__sub-heading{
-        font-size: 12px;
-    }
+@use '../components/mixin';
 
-    &__heading{
-        font-family: typography.$font-secondary;
-        font-weight: 700;
-        font-size: clamp(1.75rem, 1.033rem + 3.0189vw, 3.75rem);
-    }
+.service {
+    max-width: 1100px;
+
+    @include mixin.headings;
 
     &__name {
         font-weight: 700;

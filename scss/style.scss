@@ -4,9 +4,11 @@
 // IMPORT COMPONENTS
 @use 'components/color';
 @use 'components/typography';
+@use 'components/mixin';
 
 // IMPORT SECTIONS
 
+@use 'sections/body';
 @use 'sections/nav-bar';
 @use 'sections/hero';
 @use 'sections/intro';
@@ -17,9 +19,3 @@
 @use 'sections/price';
 @use 'sections/footer';
 
-body {
-    font-family:typography.$font-primary;
-    line-height: 1.8;
-    font-weight: 400;
-    background-color: color.$primary-bg;
-}

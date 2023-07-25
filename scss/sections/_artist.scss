@@ -1,0 +1,7 @@
+@use '../components/mixin';
+
+.artist {
+    padding: 5rem 1rem;
+    text-align: center;
+    @include mixin.headings;
+}

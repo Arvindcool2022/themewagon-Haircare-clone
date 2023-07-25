@@ -1,0 +1,9 @@
+@use '../components/color';
+@use '../components/typography';
+
+body {
+    font-family:typography.$font-primary;
+    line-height: 1.8;
+    font-weight: 400;
+    background-color: color.$primary-bg;
+}

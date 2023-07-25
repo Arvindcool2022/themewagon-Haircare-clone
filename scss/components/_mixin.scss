@@ -1,0 +1,22 @@
+@use '../components/typography';
+@use '../components/color';
+ 
+@mixin headings {
+    &__sub-heading{
+        font-size: 12px;
+        color: color.$accent-primary;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    &__heading{
+        font-family: typography.$font-secondary;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: clamp(1.75rem, 1.033rem + 3.0189vw, 3.75rem);
+    }
+
+    &__sub-title{
+        color:#212529bf
+    }
+}
