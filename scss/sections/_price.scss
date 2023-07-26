@@ -1,0 +1,80 @@
+@use '../components/mixin';
+@use '../components/color';
+
+.price {
+    padding: 5rem 1rem;
+    text-align: center;
+    @include mixin.headings;
+
+    &__list {
+        position: relative;
+        transition: all 300ms ease;
+        margin: 3rem 0;
+        height: 430px;
+    }
+
+    &__list-group {
+        list-style: none;
+        padding-left: 0;
+        border: 2px solid color.$accent-primary;
+        border-radius: 8px;
+    }
+
+    .package {
+        color: color.$accent-primary;
+        font-size: 0.875rem;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .package__price{
+        font-size: 1.75rem;
+        font-weight: 900;
+        color: color.$accent-secondary;
+        span {
+            font-size: 0.75rem;
+            color: color.$accent-muted;
+            font-weight: 400;
+        }
+    }
+    
+    &__list-item {
+        color: color.$accent-muted;
+        padding: 0.75rem ;
+        text-transform: capitalize;
+    }
+    
+    &__list-item:nth-child(even) {
+        background-color: color.$secondary-bg;
+    }
+    
+    &__list-item:last-child {
+        margin-bottom: 2.5rem;
+    }
+    
+    &-btn {
+        position: absolute;
+        bottom:-1px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+    }
+    
+    &__list:hover {
+        transform: translateY(-10px);
+
+        .package {
+            color: color.$accent-secondary;
+        }
+
+        .price__list-group {
+            border: 2px solid color.$accent-secondary;
+        }
+
+        .price-btn {
+            background-color: color.$accent-secondary;
+        }       
+
+      }
+
+}
