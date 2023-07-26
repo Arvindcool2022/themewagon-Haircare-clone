@@ -3,22 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!-- Font-Family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <!-- BS-icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
     <!-- BS-JavaScript-CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" defer></script>
-    <!-- OwlCarousel2 -->
 
     <!-- CSS sheet -->
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="main.js" defer></script>
-    <title>Document</title>
+
+    <!-- AOS animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
+    <title>Haircare</title>  
 </head>
 <body>
 <!-- NAVIGATION BAR BEGINS -->
@@ -38,19 +43,19 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
+                    <a class="nav-link" href="service.html">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Gallery</a>
+                    <a class="nav-link" href="gallery.html">Gallery</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="about.html">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
+                    <a class="nav-link" href="blog.html">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
                 </li>
             </ul>
         </div>
@@ -77,19 +82,19 @@
                             <a class="nav-link" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
+                            <a class="nav-link" href="service.html">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Gallery</a>
+                            <a class="nav-link" href="gallery.html">Gallery</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="about.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Blog</a>
+                            <a class="nav-link" href="blog.html">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -97,7 +102,7 @@
         </nav>
     </div>
         
-    <div class="hero__content my-auto  text-center  container-md">
+    <div class="hero__content my-auto  text-center  container-md" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease">
         <p class="text-primary">WELCOME TO HAIRCARE</p>
         <h1 class="text-white">WE ARE PROFESSIONAL CARE FOR YOUR HAIR</h1>
         <div><button class="btn btn-outline-primary rounded-0">Book now</button></div>
@@ -111,15 +116,15 @@
 <section class="intro">
     <div class="row">
         <div class="col-12 col-md intro__img-card intro__img-card--1">
-                <div class="intro__img-content">
-                    <p class="text-white fs-3 mb-0">For Men</p>
-                    <a href="#" class="text-primary text-decoration-none">See pricing
-                        <i class="bi bi-arrow-right"></i>
-                    </a>
+            <div class="intro__img-content">
+                <p class="text-white fs-3 mb-0">For Men</p>
+                <a href="#" class="text-primary text-decoration-none">See pricing
+                    <i class="bi bi-arrow-right"></i>
+                </a>
                 </div>
-        </div>
-        <div class="col-12 col-md-3 text-center py-5 px-5">
-            <figure>
+            </div>
+            <div class="col-12 col-md-3 text-center py-5 px-5">
+                <figure>
                 <img src="svg/hair-salon-badge.svg" alt="logo" class="mx-auto">
             </figure>
             <h2 class="fw-bolder mb-4">
@@ -138,7 +143,7 @@
             </div>
     </div>
 
-    </div>
+</div>
 </section>
 
 <!-- INTRO SECTION ENDS -->
@@ -146,50 +151,52 @@
 <!-- SERVICES SECTION BEGINS -->
 
 <section class="text-center container-lg service py-5 my-5">
-    <p class="service__sub-heading">services</p>
-    <h2 class="service__heading">services menu</h2>
-    <p class="service__sub-title">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-
+    <div  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease">
+        <p class="service__sub-heading">services</p>
+        <h2 class="service__heading">services menu</h2>
+        <p class="service__sub-title">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+    </div>
+    
     <section class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
-        <div class="col p-2">
+        <div class="col p-2"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease" data-aos-delay="100" >
             <img class="service__img" src="svg/face-shapes.svg" alt="Haircut & Styling">
             <h3 class="service__name">Haircut & Styling</h3>
             <p class="text-muted">A small river named Duden flows by their place and supplies.</p>
         </div>
-        <div class="col p-2">
+        <div class="col p-2"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease" data-aos-delay="200">
             <img class="service__img" src="svg/beard--brown.svg" alt="Beard">
             <h3 class="service__name">Beard</h3>
             <p class="text-muted">A small river named Duden flows by their place and supplies.</p>
         </div>
-        <div class="col p-2">
+        <div class="col p-2"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease" data-aos-delay="300">
             <img class="service__img" src="svg/beauty-products--brown.svg" alt="Makeup">
             <h3 class="service__name">Makeup</h3>
             <p class="text-muted">A small river named Duden flows by their place and supplies.</p>
         </div>
-        <div class="col p-2">
+        <div class="col p-2"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease" data-aos-delay="400">
             <img class="service__img" src="svg/healthy-lifestyle-logo--brown.svg" alt="Body Treatment">
             <h3 class="service__name">Body Treatment</h3>
             <p class="text-muted">A small river named Duden flows by their place and supplies.</p>
         </div>
     </section>
-
+    
 </section>
 
 <!-- SERVICES SECTION ENDS -->
 
 <!-- APPOINTMENT SECTIONS BEGINS -->
 
-<section class="appointment">
+<section class="appointment" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease" data-aos-delay="400">
     <div class="container-lg">
         <p class="appointment__sub-heading">booking</p>
         <h2 class="appointment__heading">make an appointment</h2>
         <p class="appointment__sub-title">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-
         
-        <form action="#" method="POST" class="container-md">
+        
+        <form action="#" method="POST" class="container-md" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease" data-aos-delay="400">
             <h3 class="vr">Call Us: 012-3456-7890</h3>
             <div class="row g-3 text-secondary">
-            <div class="col-12 col-sm-6">
+                <div class="col-12 col-sm-6">
                 <div class="form-floating">
                     <input type="text" name="name"class="form-control border-2 border-primary" id="input-name" placeholder="Name">
                     <label for="input-name">Name</label>
@@ -216,13 +223,13 @@
             <div class="col-12 col-sm-6">
                 <div class="form-floating">
                     <select class="form-select border-2 border-primary" id="input-select" aria-label="Floating label select example">
-                      <option value="1">Professional Makeup</option>
-                      <option value="2">Manicure Pedicure</option>
-                      <option value="3">Body Treatment</option>
+                        <option value="1">Professional Makeup</option>
+                        <option value="2">Manicure Pedicure</option>
+                        <option value="3">Body Treatment</option>
                       <option value="4">Haircut & Coloring</option>
                     </select>
                     <label for="input-select">Select a package</label>
-                  </div>
+                </div>
             </div>
             <div class="col-12 col-sm-6">
                 <div class="form-floating">
@@ -240,7 +247,7 @@
         <button type="submit" class="btn btn-primary text-white fw-semibold rounded-0 mt-3 py-3 px-4">Make an Appointment</button>
     </form>
 
-
+    
     </div>
 
 </section> 
@@ -250,17 +257,17 @@
 <!-- MAKEUP ARTIST CAROUSEL BEGINS -->
 
 <section class="artist">
-    <div class="container-lg">
+    <div class="container-lg"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease">
         <p class="artist__sub-heading">ARTISTIC DIRECTOR</p>
         <h2 class="artist__heading">MAKEUP ARTIST</h2>
         <p class="artist__sub-title">
             Far far away, behind the word mountains, far from the countries Vokalia and Consonantia
         </p>
     </div>
-
+    
     <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
-          <div class="carousel-item active">
+            <div class="carousel-item active"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease">
             <div class="card shadow">
                 <img src="images/stylist-1.jpg" class="card-img-top" alt="stylist">
                 <div class="card-body text-bg-dark rounded-bottom-2">
@@ -268,26 +275,26 @@
                     <p class="card-text text-primary fw-medium">Hair Stylist</p>
                 </div>
             </div>
-          </div>
-          <div class="carousel-item">
+        </div>
+        <div class="carousel-item"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease" data-aos-delay="100">
             <div class="card shadow">
                 <img src="images/stylist-2.jpg" class="card-img-top" alt="stylist">
                 <div class="card-body text-bg-dark rounded-bottom-2">
-                <h2 class="card-title fw-bold text-uppercase">dave buff</h2>
+                    <h2 class="card-title fw-bold text-uppercase">dave buff</h2>
                  <p class="card-text text-primary fw-medium">Hair Stylist</p>
                 </div>
             </div>
-          </div>
-          <div class="carousel-item">
+        </div>
+        <div class="carousel-item"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease" data-aos-delay="200">
             <div class="card shadow">
                 <img src="images/stylist-3.jpg" class="card-img-top" alt="stylist">
                 <div class="card-body text-bg-dark rounded-bottom-2">
-                <h2 class="card-title fw-bold text-uppercase">dave buff</h2>
+                    <h2 class="card-title fw-bold text-uppercase">dave buff</h2>
                  <p class="card-text text-primary fw-medium">Hair Stylist</p>
                 </div>
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease" data-aos-delay="300">
             <div class="card shadow">
                 <img src="images/stylist-4 (1).jpg" class="card-img-top" alt="stylist">
                 <div class="card-body text-bg-dark rounded-bottom-2">
@@ -295,44 +302,44 @@
                  <p class="card-text text-primary fw-medium">Hair Stylist</p>
                 </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card shadow">
+        </div>
+          <div class="carousel-item"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease" data-aos-delay="400">
+              <div class="card shadow">
                 <img src="images/stylist-5.jpg" class="card-img-top" alt="stylist">
                 <div class="card-body text-bg-dark rounded-bottom-2">
                 <h2 class="card-title fw-bold text-uppercase">dave buff</h2>
-                 <p class="card-text text-primary fw-medium">Hair Stylist</p>
-                </div>
+                <p class="card-text text-primary fw-medium">Hair Stylist</p>
+            </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <div class="card shadow">
-                <img src="images/stylist-2.jpg" class="card-img-top" alt="stylist">
+          <div class="carousel-item"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease">
+              <div class="card shadow">
+                  <img src="images/stylist-2.jpg" class="card-img-top" alt="stylist">
                 <div class="card-body text-bg-dark rounded-bottom-2">
                 <h2 class="card-title fw-bold text-uppercase">dave buff</h2>
                  <p class="card-text text-primary fw-medium">Hair Stylist</p>
                 </div>
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease">
             <div class="card shadow">
                 <img src="images/stylist-1.jpg" class="card-img-top" alt="stylist">
                 <div class="card-body text-bg-dark rounded-bottom-2">
-                <h2 class="card-title fw-bold text-uppercase">dave buff</h2>
+                    <h2 class="card-title fw-bold text-uppercase">dave buff</h2>
                  <p class="card-text text-primary fw-medium">Hair Stylist</p>
                 </div>
             </div>
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-      </div>
+    </div>
 
 
 </section>
@@ -343,14 +350,14 @@
 <!-- GALLERY SECTION BEGINS -->
 
 <section class="gallery container-fluid">
-    <div class="container-md pb-5">
+    <div class="container-md pb-5"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease">
         <p class="gallery__sub-heading">services</p>
         <h2 class="gallery__heading">services menu</h2>
         <p class="gallery__sub-title">Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
     </div>
     
-        <div class="row g-0">
-            <div class="col-12 col-md-6 col-lg-3 gallery__project">
+    <div class="row g-0">
+            <div class="col-12 col-md-6 col-lg-3 gallery__project"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease" data-aos-delay="0">
                 <img class="gallery__image" src="images/work-1.jpg" alt="gallery-photo">
                 <span class="gallery__project--title">stylist</span>
                 <span class="gallery__project--expand">
@@ -358,7 +365,7 @@
                 </span>
                 <a class="gallery__project--link" href="#">beard</a>                
             </div>
-            <div class="col-12 col-md-6 col-lg-3 gallery__project">
+            <div class="col-12 col-md-6 col-lg-3 gallery__project"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease" data-aos-delay="150">
                 <img class="gallery__image" src="images/work-2.jpg" alt="gallery-photo">
                 <span class="gallery__project--title">stylist</span>
                 <span class="gallery__project--expand">
@@ -366,7 +373,7 @@
                 </span>
                 <a class="gallery__project--link" href="#">beard</a>                
             </div>
-            <div class="col-12 col-md-6 col-lg-3 gallery__project">
+            <div class="col-12 col-md-6 col-lg-3 gallery__project"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease" data-aos-delay="300">
                 <img class="gallery__image" src="images/work-3.jpg" alt="gallery-photo">
                 <span class="gallery__project--title">stylist</span>
                 <span class="gallery__project--expand">
@@ -374,7 +381,7 @@
                 </span>
                 <a class="gallery__project--link" href="#">beard</a>                
             </div>
-            <div class="col-12 col-md-6 col-lg-3 gallery__project">
+            <div class="col-12 col-md-6 col-lg-3 gallery__project"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease" data-aos-delay="450">
                 <img class="gallery__image" src="images/work-4.jpg" alt="gallery-photo">
                 <span class="gallery__project--title">stylist</span>
                 <span class="gallery__project--expand">
@@ -382,7 +389,7 @@
                 </span>
                 <a class="gallery__project--link" href="#">beard</a>                
             </div>
-            <div class="col-12 col-md-6 col-lg-3 gallery__project">
+            <div class="col-12 col-md-6 col-lg-3 gallery__project"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease" data-aos-delay="100">
                 <img class="gallery__image" src="images/work-5.jpg" alt="gallery-photo">
                 <span class="gallery__project--title">stylist</span>
                 <span class="gallery__project--expand">
@@ -390,7 +397,7 @@
                 </span>
                 <a class="gallery__project--link" href="#">beard</a>                
             </div>
-            <div class="col-12 col-md-6 col-lg-3 gallery__project">
+            <div class="col-12 col-md-6 col-lg-3 gallery__project"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease" data-aos-delay="250">
                 <img class="gallery__image" src="images/work-6.jpg" alt="gallery-photo">
                 <span class="gallery__project--title">stylist</span>
                 <span class="gallery__project--expand">
@@ -398,7 +405,7 @@
                 </span>
                 <a class="gallery__project--link" href="#">beard</a>                
             </div>
-            <div class="col-12 col-md-6 col-lg-3 gallery__project">
+            <div class="col-12 col-md-6 col-lg-3 gallery__project"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease" data-aos-delay="400">
                 <img class="gallery__image" src="images/work-7.jpg" alt="gallery-photo">
                 <span class="gallery__project--title">stylist</span>
                 <span class="gallery__project--expand">
@@ -406,7 +413,7 @@
                 </span>
                 <a class="gallery__project--link" href="#">beard</a>                
             </div>
-            <div class="col-12 col-md-6 col-lg-3 gallery__project">
+            <div class="col-12 col-md-6 col-lg-3 gallery__project"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease" data-aos-delay="550">
                 <img class="gallery__image" src="images/work-8.jpg" alt="gallery-photo">
                 <span class="gallery__project--title">stylist</span>
                 <span class="gallery__project--expand">
@@ -415,7 +422,7 @@
                 <a class="gallery__project--link" href="#">beard</a>                
             </div>
         </div>
-    
+        
 </section>
 
 <!-- GALLERY SECTION ENDS -->
@@ -423,17 +430,17 @@
 <!-- PRICE SECTION BEGINS -->
 
 <section class="price">
-    <div class="container-lg">
+    <div class="container-lg"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease">
 
         <p class="price__sub-heading">PRICING</p>
         <h2 class="price__heading">OUR PRICES</h2>
         <p class="price__sub-title">
             Far far away, behind the word mountains, far from the countries Vokalia and Consonantia
         </p>
-
+        
         <!-- PRICE TABLES -->
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
-            <div class="col price__list">
+            <div class="col price__list"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease" data-aos-delay="100">
                 <ul class="price__list-group">
                     <li class="price__list-item">
                         <p class="package">HAIR STYLE</p>
@@ -457,7 +464,7 @@
                 </ul>
                 <button class="btn btn-primary rounded-pill price-btn">Get offer</button>
             </div>
-            <div class="col price__list">
+            <div class="col price__list"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease" data-aos-delay="250">
                 <ul class="price__list-group">
                     <li class="price__list-item">
                         <p class="package">MANICURE PEDICURE</p>
@@ -481,7 +488,7 @@
                 </ul>
                 <button class="btn btn-primary rounded-pill price-btn">Get offer</button>
             </div>
-            <div class="col price__list">
+            <div class="col price__list"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease" data-aos-delay="400">
                 <ul class="price__list-group">
                     <li class="price__list-item">
                         <p class="package">MAKEUP</p>
@@ -505,7 +512,7 @@
                 </ul>
                 <button class="btn btn-primary rounded-pill price-btn">Get offer</button>
             </div>
-            <div class="col price__list">
+            <div class="col price__list"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease" data-aos-delay="550">
                 <ul class="price__list-group">
                     <li class="price__list-item">
                         <p class="package">BODY TREATMENT</p>
@@ -541,17 +548,17 @@
 <section class="testimony">
     <div class="container-md">
         <div class="row">
-            <div class="col col-md-5  testimony__image">
+            <div class="col col-md-5  testimony__image" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease">
                 <img class="d-none d-md-block" src="images/work-7.jpg" alt="barber and customer">
             </div>
-            <div class="col-12 col-md-6 testimony__content">
+            <div class="col-12 col-md-6 testimony__content" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease" data-aos-delay="150">
                 <p class="testimony__sub-heading">TESTIMONY</p>
                 <h2 class="testimony__heading">HAPPY CUSTOMER</h2>
                 <!-- CAROUSEL BEGINS -->
-                <div id="testimony-carousel" class="carousel slide" data-bs-ride="carousel">
-
+                <div id="testimony-carousel" class="carousel slide" data-bs-ride="carousel"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease" data-aos-delay="150">
+                    
                     <div class="carousel-inner">
-                      <div class="carousel-item active">
+                        <div class="carousel-item active">
                         <div class="card">
                             <div class="card-body">
                                 <p class="card-text text-muted fw-medium">"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."</p>
@@ -564,9 +571,9 @@
                                 </div>
                             </div> 
                         </div>
-                      </div>
+                    </div>
                       <div class="carousel-item">
-                        <div class="card">
+                          <div class="card">
                             <div class="card-body">
                                 <p class="card-text text-muted fw-medium">"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."</p>
                                 <div class="card-detail d-flex"> 
@@ -580,8 +587,8 @@
                         </div>
                       </div>
                       <div class="carousel-item">
-                        <div class="card">
-                            <div class="card-body">
+                          <div class="card">
+                              <div class="card-body">
                                 <p class="card-text text-muted fw-medium">"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."</p>
                                 <div class="card-detail d-flex"> 
                                     <img src="images/person_3.jpg" alt="customer">
@@ -608,7 +615,7 @@
                         </div>
                       </div>
                       <div class="carousel-item">
-                        <div class="card">
+                          <div class="card">
                             <div class="card-body">
                                 <p class="card-text text-muted fw-medium">"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."</p>
                                 <div class="card-detail d-flex"> 
@@ -629,79 +636,79 @@
                         <button type="button" data-bs-target="#testimony-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
                         <button type="button" data-bs-target="#testimony-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
                       </div>
-                  </div>
-                  <!-- CAROUSEL ENDS -->
+                    </div>
+                    <!-- CAROUSEL ENDS -->
             </div>
 
         </div>
     </div>
-
+    
 </section>
 
 <!-- TESTIMONY SECTION ENDS -->
 
 <!-- FOOTER SECTION BEGINS -->
 
-<footer class="footer py-5 text-bg-dark">
+<footer class="footer py-5 text-bg-dark" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease">
     <div class="container-md row py-5 mx-auto">
         <div class="col-md">
             <h2 class="footer__title">HAIRCARE</h2>
             <p class="footer__text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
 
             <ul class="footer__icon-list">
-                <li class="footer__icon-container">
+                <li class="footer__icon-container" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease" data-aos-delay="100">
                     <a href="#" class="footer__icon">
                         <i class="bi bi-twitter"></i>
                     </a>
                 </li>
-                <li class="footer__icon-container">
+                <li class="footer__icon-container" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease" data-aos-delay="200">
                     <a href="#" class="footer__icon">
                         <i class="bi bi-facebook"></i>
                     </a>
                 </li>
-                <li class="footer__icon-container">
+                <li class="footer__icon-container" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease" data-aos-delay="300">
                     <a href="#" class="footer__icon">
                         <i class="bi bi-instagram"></i>
                     </a>
                 </li>
             </ul>
         </div>
-
+        
         <div class="col-md">
             <h2 class="footer__title">INFORMATION</h2>
             <ul  class="footer__list">
-                 <li class="list-group-item footer__list--item">
+                <li class="list-group-item footer__list--item">
                     <a class="footer__list-link" href="#">FAQs</a>
                 </li>
                  <li class="list-group-item footer__list--item">
-                    <a class="footer__list-link" href="#">Privacy</a>
-                </li>
-                 <li class="list-group-item footer__list--item">
+                     <a class="footer__list-link" href="#">Privacy</a>
+                    </li>
+                    <li class="list-group-item footer__list--item">
                     <a class="footer__list-link" href="#">Terms Condition</a>
                 </li>
             </ul>
         </div>
-
+        
         <div class="col-md">
             <h2 class="footer__title">links</h2>
             <ul class="footer__list">
-                 <li class="list-group-item footer__list--item">
+                <li class="list-group-item footer__list--item">
                     <a class="footer__list-link" href="#">Home</a>
                 </li>
                  <li class="list-group-item footer__list--item">
-                    <a class="footer__list-link" href="#">About</a>
+                     <a class="footer__list-link" href="#">About</a>
                 </li>
-                 <li class="list-group-item footer__list--item">
+                <li class="list-group-item footer__list--item">
                     <a class="footer__list-link" href="#">Services</a>
                 </li>
-                 <li class="list-group-item footer__list--item">
+                <li class="list-group-item footer__list--item">
                     <a class="footer__list-link" href="#">Work</a>
                 </li>
-                 <li class="list-group-item footer__list--item">
+                <li class="list-group-item footer__list--item">
                     <a class="footer__list-link" href="#">Blog</a>
                 </li>
                  <li class="list-group-item footer__list--item">
-                    <a class="footer__list-link" href="#">Contact</a>
+                     <a class="footer__list-link" href="#">Contact</a>
                 </li>
             </ul>
         </div>
@@ -724,12 +731,14 @@
             Copyright ©2023 All rights reserved by Colorlib | Cloned with <i class="bi bi-heart-fill"></i> by Arvind.
         </div>
 
-
-
+        
+        
     </div>
 </footer>
 
 <!-- FOOTER SECTION ENDS -->
 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script defer> AOS.init();</script>
 </body>
 </html>
