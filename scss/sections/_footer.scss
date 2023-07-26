@@ -1,0 +1,59 @@
+@use '../components/typography';
+@use '../components/color';
+@use '../components/mixin';
+
+.footer {
+    
+    .col-md {
+        margin-bottom: 2rem;
+    }
+    &__title {
+        font-family: typography.$font-secondary;
+        font-weight: 700;
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+    &__text {
+        color: color.$accent-footer;
+    }
+    &__icon-list {
+        padding: 0;
+        display: flex;
+        gap: 0.35rem;
+    }
+    &__icon-container {
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        margin: 0;
+        border-radius: 50%;
+        background-color: #3d3d3d;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover > .footer__icon {
+            color: color.$accent-primary;
+        }
+    }
+    &__icon {
+        font-size: 1.35rem;
+        color: color.$accent-footer;
+        transition: all 250ms ease;
+        :hover {
+            color: color.$accent-primary;
+        }
+    }
+    &__list {
+        padding: 0;
+    }
+    &__list-link {
+        text-decoration: none;
+
+        color: color.$accent-footer;
+        transition: all 250ms ease;
+        &:hover {
+            color: color.$accent-primary;
+        }
+    }
+
+}
