@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Font-Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- BS-icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- BS-JavaScript-CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" defer></script>
+
+    <!-- CSS sheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="main.js" defer></script>
+
+    <!-- AOS animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <title>Haircare</title>  
+</head>
+<body>
+<!-- NAVIGATION BAR BEGINS -->
+<header class="navbar navbar-expand-lg bg-black visible-till-lg" data-bs-theme="dark">
+    <nav class="container-xl">
+        <a class="navbar-brand" href="#">
+            <img src="svg/hair-salon-badge--white.svg" alt="">
+            Haircare
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list"> MENU</i>
+            <!-- <span class="navbar-toggler-icon"></span> -->
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="service.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+</header>
+
+<!-- NAVIGATION BAR ENDS -->
+
+<!-- HERO SECTION BEGINS -->
+
+<section class=" hero--2 hero d-flex justify-content-start flex-column ">
+
+    <div class=" visible-after-lg" data-bs-theme="dark">
+        <nav class="navbar navbar-expand">
+            <div class="container-xl">
+                <a class="navbar-brand" href="#">
+                    <img src="svg/hair-salon-badge--white.svg" alt="">
+                    Haircare
+                </a>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav mb-2 mb-lg-0 me-2">
+                        <li class="nav-item">
+                            <a class="nav-link"href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" aria-current="page" href="service.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+        
+    <div class="hero__content mt-auto text-center  container-md" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease">
+        <h1 class="text-white text-uppercase">Services</h1>
+        <p class="breadcrumbs">
+            <span class="mr-2">
+                <a class="text-decoration-none" href="index.html">Home <i class="bi bi-arrow-right"></i></a>
+            </span> 
+            <span class="text-white"> Services</span>
+        </p>
+    </div>
+
+</section>
+
+<!-- HERO SECTION ENDS -->
+
+<!-- SERVICES SECTION BEGINS -->
+
+<section class="text-center container-lg service py-5 my-5">
+    <div  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease">
+        <p class="service__sub-heading">services</p>
+        <h2 class="service__heading">services menu</h2>
+        <p class="service__sub-title">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+    </div>
+    
+    <section class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+        <div class="col p-2"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease" data-aos-delay="100" >
+            <img class="service__img" src="svg/face-shapes.svg" alt="Haircut & Styling">
+            <h3 class="service__name">Haircut & Styling</h3>
+            <p class="text-muted">A small river named Duden flows by their place and supplies.</p>
+        </div>
+        <div class="col p-2"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease" data-aos-delay="200">
+            <img class="service__img" src="svg/beard--brown.svg" alt="Beard">
+            <h3 class="service__name">Beard</h3>
+            <p class="text-muted">A small river named Duden flows by their place and supplies.</p>
+        </div>
+        <div class="col p-2"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease" data-aos-delay="300">
+            <img class="service__img" src="svg/beauty-products--brown.svg" alt="Makeup">
+            <h3 class="service__name">Makeup</h3>
+            <p class="text-muted">A small river named Duden flows by their place and supplies.</p>
+        </div>
+        <div class="col p-2"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease" data-aos-delay="400">
+            <img class="service__img" src="svg/healthy-lifestyle-logo--brown.svg" alt="Body Treatment">
+            <h3 class="service__name">Body Treatment</h3>
+            <p class="text-muted">A small river named Duden flows by their place and supplies.</p>
+        </div>
+    </section>
+    
+</section>
+
+<!-- SERVICES SECTION ENDS -->
+
+<!-- APPOINTMENT SECTIONS BEGINS -->
+
+<section class="appointment" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease" data-aos-delay="400">
+    <div class="container-lg">
+        <p class="appointment__sub-heading">booking</p>
+        <h2 class="appointment__heading">make an appointment</h2>
+        <p class="appointment__sub-title">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+        
+        
+        <form action="#" method="POST" class="container-md" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease" data-aos-delay="400">
+            <h3 class="vr">Call Us: 012-3456-7890</h3>
+            <div class="row g-3 text-secondary">
+                <div class="col-12 col-sm-6">
+                <div class="form-floating">
+                    <input type="text" name="name"class="form-control border-2 border-primary" id="input-name" placeholder="Name">
+                    <label for="input-name">Name</label>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6">
+                <div class="form-floating">
+                    <input type="email" name="email"class="form-control border-2 border-primary" id="input-email" placeholder="name@example.com">
+                    <label for="input-email">Email</label>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6">
+                <div class="form-floating">
+                    <input type="date" name="date"class="form-control border-2 border-primary" id="input-date">
+                    <label for="input-date">Date</label>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6">
+                <div class="form-floating">
+                    <input type="time" name="time"class="form-control border-2 border-primary" id="input-time">
+                    <label for="input-time">Time</label>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6">
+                <div class="form-floating">
+                    <select class="form-select border-2 border-primary" id="input-select" aria-label="Floating label select example">
+                        <option value="1">Professional Makeup</option>
+                        <option value="2">Manicure Pedicure</option>
+                        <option value="3">Body Treatment</option>
+                      <option value="4">Haircut & Coloring</option>
+                    </select>
+                    <label for="input-select">Select a package</label>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6">
+                <div class="form-floating">
+                    <input type="tel" name="ph-num"class="form-control border-2 border-primary" id="input-phone">
+                    <label for="input-phone">Phone</label>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="form-floating">
+                    <textarea class="form-control  border-2 border-primary" placeholder="Leave a comment here" id="Textarea" style="height: 200px; resize: none;"></textarea>
+                    <label for="textarea">Comments</label>
+                  </div>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary text-white fw-semibold rounded-0 mt-3 py-3 px-4">Make an Appointment</button>
+    </form>
+
+    
+    </div>
+
+</section> 
+
+<!-- APPOINTMENT SECTIONS ENDS -->
+
+<!-- PRICE SECTION BEGINS -->
+
+<section class="price">
+    <div class="container-lg"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease">
+
+        <p class="price__sub-heading">PRICING</p>
+        <h2 class="price__heading">OUR PRICES</h2>
+        <p class="price__sub-title">
+            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia
+        </p>
+        
+        <!-- PRICE TABLES -->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+            <div class="col price__list"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease" data-aos-delay="100">
+                <ul class="price__list-group">
+                    <li class="price__list-item">
+                        <p class="package">HAIR STYLE</p>
+                        <h3 class="package__price">$50.00<span> /session</span></h3>
+                    </li>
+                    <li class="price__list-item">
+                        Hair Dryer
+                    </li>
+                    <li class="price__list-item">
+                        Hair Coloring
+                    </li>
+                    <li class="price__list-item">
+                        Hair Cut
+                    </li>
+                    <li class="price__list-item">
+                        Hair Dresser
+                    </li>
+                    <li class="price__list-item">
+                        Hair Spa
+                    </li>
+                </ul>
+                <button class="btn btn-primary rounded-pill price-btn">Get offer</button>
+            </div>
+            <div class="col price__list"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease" data-aos-delay="250">
+                <ul class="price__list-group">
+                    <li class="price__list-item">
+                        <p class="package">MANICURE PEDICURE</p>
+                        <h3 class="package__price">$34.50<span> /session</span></h3>
+                    </li>
+                    <li class="price__list-item">
+                        Manicure
+                    </li>
+                    <li class="price__list-item">
+                        Pedicure
+                    </li>
+                    <li class="price__list-item">
+                        Coloring
+                    </li>
+                    <li class="price__list-item">
+                        Nails
+                    </li>
+                    <li class="price__list-item">
+                        Nail Cut
+                    </li>
+                </ul>
+                <button class="btn btn-primary rounded-pill price-btn">Get offer</button>
+            </div>
+            <div class="col price__list"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease" data-aos-delay="400">
+                <ul class="price__list-group">
+                    <li class="price__list-item">
+                        <p class="package">MAKEUP</p>
+                        <h3 class="package__price">$54.50<span> /session</span></h3>
+                    </li>
+                    <li class="price__list-item">
+                        Makeup
+                    </li>
+                    <li class="price__list-item">
+                        Professional Makeup
+                    </li>
+                    <li class="price__list-item">
+                        Blush On
+                    </li>
+                    <li class="price__list-item">
+                        Facial Massage
+                    </li>
+                    <li class="price__list-item">
+                        Facial Spa
+                    </li>
+                </ul>
+                <button class="btn btn-primary rounded-pill price-btn">Get offer</button>
+            </div>
+            <div class="col price__list"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease" data-aos-delay="550">
+                <ul class="price__list-group">
+                    <li class="price__list-item">
+                        <p class="package">BODY TREATMENT</p>
+                        <h3 class="package__price">$89.50<span> /session</span></h3>
+                    </li>
+                    <li class="price__list-item">
+                        Massage
+                    </li>
+                    <li class="price__list-item">
+                        Spa
+                    </li>
+                    <li class="price__list-item">
+                        Foot Spa
+                    </li>
+                    <li class="price__list-item">
+                        Body Spa
+                    </li>
+                    <li class="price__list-item">
+                        Relaxing
+                    </li>
+                </ul>
+                <button class="btn btn-primary rounded-pill price-btn">Get offer</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- PRICE SECTION ENDS -->
+
+<!-- FOOTER SECTION BEGINS -->
+
+<footer class="footer py-5 text-bg-dark" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease">
+    <div class="container-md row py-5 mx-auto">
+        <div class="col-md">
+            <h2 class="footer__title">HAIRCARE</h2>
+            <p class="footer__text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+
+            <ul class="footer__icon-list">
+                <li class="footer__icon-container" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease" data-aos-delay="100">
+                    <a href="#" class="footer__icon">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                </li>
+                <li class="footer__icon-container" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease" data-aos-delay="200">
+                    <a href="#" class="footer__icon">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                </li>
+                <li class="footer__icon-container" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease" data-aos-delay="300">
+                    <a href="#" class="footer__icon">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="col-md">
+            <h2 class="footer__title">INFORMATION</h2>
+            <ul  class="footer__list">
+                <li class="list-group-item footer__list--item">
+                    <a class="footer__list-link" href="#">FAQs</a>
+                </li>
+                 <li class="list-group-item footer__list--item">
+                     <a class="footer__list-link" href="#">Privacy</a>
+                    </li>
+                    <li class="list-group-item footer__list--item">
+                    <a class="footer__list-link" href="#">Terms Condition</a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="col-md">
+            <h2 class="footer__title">links</h2>
+            <ul class="footer__list">
+                <li class="list-group-item footer__list--item">
+                    <a class="footer__list-link" href="#">Home</a>
+                </li>
+                 <li class="list-group-item footer__list--item">
+                     <a class="footer__list-link" href="#">About</a>
+                </li>
+                <li class="list-group-item footer__list--item">
+                    <a class="footer__list-link" href="#">Services</a>
+                </li>
+                <li class="list-group-item footer__list--item">
+                    <a class="footer__list-link" href="#">Work</a>
+                </li>
+                <li class="list-group-item footer__list--item">
+                    <a class="footer__list-link" href="#">Blog</a>
+                </li>
+                 <li class="list-group-item footer__list--item">
+                     <a class="footer__list-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-md">
+            <h2 class="footer__title">HAVE A QUESTIONS?</h2>
+            <p class="footer__text">
+                <i class="bi bi-geo-alt-fill pe-2"></i>203 Fake St. Mountain View, San Francisco, California, USA
+            </p>
+            <p>
+                <a  class="footer__list-link" href="#">
+                <i class="bi bi-telephone-fill pe-2"></i>+2 392 3929 210</a>
+            </p>
+            <p>
+                <a class="footer__list-link" href="#"><i class="bi bi-envelope-fill pe-2"></i>info@yourdomain.com</a>
+            </p>
+        </div>
+
+        <div class="col-12 text-center footer__text">
+            Copyright ©2023 All rights reserved by Colorlib | Cloned with <i class="bi bi-heart-fill"></i> by Arvind.
+        </div>
+
+        
+        
+    </div>
+</footer>
+
+<!-- FOOTER SECTION ENDS -->
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script defer> AOS.init();</script>
+</body>
+</html>

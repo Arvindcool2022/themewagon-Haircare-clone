@@ -1,17 +1,29 @@
 @use '../components/color';
 @use '../components/typography';
 
+
+
+
+
+.hero--1{
+    background-image: url(../../images/bg-2.jpg);
+}
+.hero--2{
+    background-image: url(../../images/bg-1.jpg);
+    & .hero__content{
+        padding-bottom: 7rem;
+    }
+}
 .hero {
     height: 100vh;
     width: 100%;
     background-color: #00000088;
-    background-image: url(../../images/bg-2.jpg);
     background-repeat: no-repeat;
     background-position:top center;
     background-size: cover;
     background-blend-mode:darken;
     background-attachment: fixed;
-
+    
     
 
     & .navbar-nav {
@@ -50,3 +62,4 @@
     }
 
 }
+
