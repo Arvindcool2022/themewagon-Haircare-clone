@@ -37,6 +37,11 @@
             font-weight: 400;
         }
     }
+
+    .row {
+        max-width: 1116px;
+        margin: 0 auto;
+    }
     
     &__list-item {
         color: color.$accent-muted;
@@ -78,3 +83,4 @@
       }
 
 }
+

@@ -1,26 +1,52 @@
 @use '../components/mixin';
+@use '../components/color';
 
 .artist {
     padding: 5rem 1rem;
     text-align: center;
     @include mixin.headings;
-
+    
     .carousel-inner {
         padding: 1rem;
     }
-
+    
     .card {
         margin: 0 .5rem;
-        
+        transition: all 300ms ease;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: all 300ms ease;
+        }
+
+
+
         img{
             max-height: 350px;
             object-fit: cover;
+        }
+        &-body{
+            z-index: 2;
         }
         &-title {
             font-size: 1.5rem;
         }
         &-text {
             font-size: 0.875rem;
+        }
+
+        &:hover {
+            transform: translateY(-10px);
+            &::before {
+                background-color:color.$accent-primary;
+                opacity: 0.65;
+                z-index: 1;
+            }
         }
     }
 
